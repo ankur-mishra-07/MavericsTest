@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="already_layout_margin">10dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="twentytwo">22dp</dimen>
+    <dimen name="or_cont_size">16sp</dimen>
+    <dimen name="txt_sz">18sp</dimen>
+</resources>

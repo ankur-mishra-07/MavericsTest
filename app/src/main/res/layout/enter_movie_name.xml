@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/resetPasswordLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:elevation="@dimen/already_layout_margin"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/fifteen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten_dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/crossPaymentDialog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cross" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentytwo"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_weight="1"
+                android:text="@string/enter_movie"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/or_cont_size"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:cursorVisible="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/movieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/eg_movie"
+                    android:padding="@dimen/ten_dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    app:boxBackgroundMode="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/twentytwo"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:elevation="@dimen/ten_dp"
+                android:onClick="doOtpVerify"
+                android:padding="@dimen/ten_dp"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_sz" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

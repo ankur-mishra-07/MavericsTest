@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MavericsTest</string>
+    <string name="enter_movie">Enter Movie Name to Search</string>
+    <string name="eg_movie">eg: Marvel</string>
+    <string name="search">Search</string>
+    <string name="loading">Loading Movies....</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="release_date">"Released on : "</string>
+    <string name="category">"Category : "</string>
+    <string name="runtime">"Runtime : "</string>
+    <string name="score">Score \n</string>
+    <string name="review">Review \n</string>
+    <string name="popularity">Popularity \n</string>
+    <string name="director">"Director : "</string>
+    <string name="writer">"Writer : "</string>
+    <string name="actor">"Actor : "</string>
+    <string name="noMovie">No Movies Found !!</string>
+</resources>
