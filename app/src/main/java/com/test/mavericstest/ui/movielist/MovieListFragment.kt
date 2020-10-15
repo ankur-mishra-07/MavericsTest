@@ -12,7 +12,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.test.mavericstest.R
 import com.test.mavericstest.common.Loading
@@ -85,10 +84,10 @@ class MovieListFragment : Fragment(), MyMovieDataRecyclerViewAdapter.onMovieClic
 
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
-                val linearLayoutManager =
-                    recyclerView.layoutManager as LinearLayoutManager?
+                val gridLayoutManager =
+                    recyclerView.layoutManager as GridLayoutManager?
                 if (!isLoading) {
-                    if (linearLayoutManager != null && linearLayoutManager.findLastCompletelyVisibleItemPosition() == mSavedResponse.size - 1) {
+                    if (gridLayoutManager != null && gridLayoutManager.findLastCompletelyVisibleItemPosition() == mSavedResponse.size - 1) {
                         //bottom of list!
                         ++page
                         viewModel.getMovieList().removeObservers(viewLifecycleOwner)

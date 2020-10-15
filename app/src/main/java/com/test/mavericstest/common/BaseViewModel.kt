@@ -8,7 +8,6 @@ import io.reactivex.disposables.CompositeDisposable
 open class BaseViewModel : ViewModel() {
 
     private var compositeDisposable: CompositeDisposable = CompositeDisposable()
-    private val selected = MutableLiveData<Boolean>()
 
     override fun onCleared() {
         super.onCleared()
